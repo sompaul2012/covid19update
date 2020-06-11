@@ -1,0 +1,45 @@
+<template>
+    <div class="list">
+        <!--<template for:each={sessions} for:item="session" for:index="index">
+        <p key={session.id}>{session.name}</p>
+      </template>
+      <p>
+        This is default template.
+    </p>
+    <p>
+        <button onclick={switchTemplate}>Switch Templates</button>
+    </p>-->
+    </div>
+    <div class="main-container">
+        <!--Enter counry for weather : <input type="text" class="Search" placeholder="Search..." value={query} onchange={handleChange}
+        onkeypress={search}/>-->
+        <p>Enter counry for covid report :</p>
+        <p>
+            <input
+                type="text"
+                class="Search"
+                placeholder="Search..."
+                value={country}
+                onchange={handlecountryChange}
+            />
+            <button onclick={searchData}>Search</button>
+        </p>
+    </div>
+    <div>
+        <div class="slds-card">
+            <div class="slds-p-around_medium">
+                <my-cards confirm-count={confirmed}></my-cards>
+            </div>
+        </div>
+        <div class="slds-card">
+            <div class="slds-p-around_medium">
+                <my-charts recovery-count={recovery}></my-charts>
+            </div>
+        </div>
+        <div class="slds-card">
+            <div class="slds-p-around_medium">
+                <my-countrypicker death-count={deathdata}></my-countrypicker>
+            </div>
+        </div>
+    </div>
+</template>
