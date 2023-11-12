@@ -5,7 +5,7 @@
     "author": "somnathpaul",
     "bugs": "https://github.com/somnathpaul/covidtrackerapp/issues",
     "dependencies": {
-        "axios": "^0.21.1",
+        "axios": "^1.6.0",
         "compression": "^1.7.4",
         "express": "^4.17.1",
         "helmet": "^3.22.1"
